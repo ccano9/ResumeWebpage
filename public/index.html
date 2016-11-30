@@ -8,20 +8,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/justified-nav.css">
     <title>Fatherless Child</title>
+	<style>
+    body {background-color: aquamarine;}
+	 h1 {color: red;}  
+	     p {color: darkmagenta;}
+
+	</style>
 </head>
+ 
 
 <body>
     <div class="container">
         <!-- Jumbotron -->
         <div class="jumbotron">
-            <h1>Christian Cano</h1>
-            <p class="lead">Desktop Support Engineer pursuing Bachelor's Degree in Computer Science</p>
+            <h1>Christian Cano
+			
+            <p class="lead">"The amount of money I can make is determined by the level of difficulty of the problems I can solve"</p>
+			<p class="lead">Physics professor - Mr. Gerz</p>
         </div>
-
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>
         <!-- Example row of columns -->
         <div class="row" ng-controller="AppCtrl">
             <div class="col-lg-4">
-                <h2>Education</h2>
+                <h2><font color="red">Education</font></h2>
                 <div ng-repeat="edu in resume | filter:{ type: 'edu' }">
                     <p>School: {{edu.name}}</p>
                     <p>Degree: {{edu.degree}}</p>
@@ -29,13 +42,13 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <h2>Skills</h2>
+                <h2><font color="red">Skills</font></h2>
                 <div ng-repeat="skill in resume | filter:{ type: 'skill' }">
                     <p>{{skill.name}}</p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <h2>Projects</h2>
+                <h2><font color="red">Projects</font></h2>
                 <div ng-repeat="project in resume | filter:{ type: 'project' }">
                     <p>{{project.name}}</p>
                 </div>
